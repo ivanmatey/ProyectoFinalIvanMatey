@@ -6,8 +6,6 @@ app = Flask(__name__)
 
 @app.route("/")
 def main():
-    #Aqui va su código
-
     img = cv.imread('RXimg.png')
     kernel = np.ones((5,5),np.uint8)
     opening = cv.morphologyEx(img, cv.MORPH_OPEN, kernel)
