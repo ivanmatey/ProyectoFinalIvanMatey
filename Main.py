@@ -29,4 +29,4 @@ def main():
        plt.xticks([]),plt.yticks([])
 
     plt.show()
-return img2
+    return img2
